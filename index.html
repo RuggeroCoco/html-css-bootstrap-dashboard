@@ -35,24 +35,39 @@
       <!-- HEADER -->
       <header class="ms_header">
         <nav
-          class="d-flex justify-content-between align-items-center py-3 px-3"
+          class="d-flex justify-content-between align-items-center py-2 px-3"
         >
-          <div>
+          <!-- LOGO -->
+          <div class="col-auto">
             <img src="assets/mobile-logo.png" alt="" class="m-logo d-lg-none" />
             <img src="assets/logo.svg" alt="" class="d-none d-lg-block" />
           </div>
-          <div>
-            <form action="">
-              <!-- <button><i class="fa-solid fa-magnifying-glass"></i></button> -->
-              <input
-                type="text"
-                placeholder="Prova a cercare: Lezioni di Laravel"
-                aria-label="Search"
-                class="ms_navigation form-control me-2"
-              />
+          <!-- SEARCH -->
+          <div class="col">
+            <form action="" class="px-3 py-0">
+              <nav class="navbar">
+                <form class="container-fluid">
+                  <div class="input-group">
+                    <span
+                      class="input-group-text bg-body-secondary"
+                      id="basic-addon1"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i
+                    ></span>
+                    <input
+                      type="text"
+                      class="form-control bg-body-secondary border-start-0"
+                      placeholder="Prova a cercare: Lezioni di Laravel"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                </form>
+              </nav>
             </form>
           </div>
-          <div class="d-flex">
+          <!-- SEARCH -->
+          <div class="d-flex col-auto">
             <i class="fa-solid fa-list me-3 d-none d-lg-block"></i>
             <i class="fa-solid fa-circle-question me-3 d-none d-lg-block"></i>
             <i class="fa-solid fa-ellipsis-vertical me-3 d-none d-lg-block"></i>
@@ -63,45 +78,131 @@
       <!-- MAIN -->
       <main class="ms_main d-flex">
         <!-- SIDEBAR -->
-        <div class="ms_sidebar py-4 d-flex flex-column justify-content-between">
+        <div
+          class="ms_sidebar py-4 d-flex flex-column mb-3 justify-content-between"
+        >
           <img src="assets/sidebar-bg.png" alt="" />
-          <div class="ms_sidebar-top"></div>
+          <div class="ms_sidebar-top">
+            <i class="fa-solid fa-house"></i>Home
+            <i class="fa-solid fa-chart-simple"></i>Stats
+            <i class="fa-solid fa-signal"></i>Signal
+          </div>
           <div class="ms_sidebar-bottom"></div>
         </div>
         <!-- SIDEBAR -->
-        <div class="ms_content overflow-y-auto"></div>
-        <!-- HEADER-CONTENT -->
-        <div class="ms_content-header py-4">
-          <div class="container-fluid">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quia
-            dolore sequi maxime fuga quae eligendi nostrum beatae facilis
-            tenetur quibusdam blanditiis eos, laboriosam possimus totam fugit
-            reprehenderit omnis repellat quas. Cumque, provident esse dolore quo
-            omnis odio? Mollitia, numquam beatae? Voluptate dolorem beatae,
-            delectus repellat laborum sequi necessitatibus doloribus!
+        <div class="ms_content overflow-y-auto">
+          <!-- HEADER-CONTENT -->
+          <div class="ms_content-header py-4">
+            <div class="container-fluid">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quia
+              dolore sequi maxime fuga quae eligendi nostrum beatae facilis
+              tenetur quibusdam blanditiis eos, laboriosam possimus totam fugit
+              reprehenderit omnis repellat quas. Cumque, provident esse dolore
+              quo omnis odio? Mollitia, numquam beatae? Voluptate dolorem
+              beatae, delectus repellat laborum sequi necessitatibus doloribus!
+            </div>
           </div>
-        </div>
-        <!-- HEADER-CONTENT -->
-        <div class="ms_content-main py-4">
-          <div class="container-fluid">
-            <div class="row g-4">
-              <div class="col-12 col-lg-7">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                quia dolore sequi maxime fuga quae eligendi nostrum beatae
-                facilis tenetur quibusdam blanditiis eos, laboriosam possimus
-                totam fugit reprehenderit omnis repellat quas. Cumque, provident
-                esse dolore quo omnis odio? Mollitia, numquam beatae? Voluptate
-                dolorem beatae, delectus repellat laborum sequi necessitatibus
-                doloribus!
-              </div>
-              <div class="col-12 col-lg-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                quia dolore sequi maxime fuga quae eligendi nostrum beatae
-                facilis tenetur quibusdam blanditiis eos, laboriosam possimus
-                totam fugit reprehenderit omnis repellat quas. Cumque, provident
-                esse dolore quo omnis odio? Mollitia, numquam beatae? Voluptate
-                dolorem beatae, delectus repellat laborum sequi necessitatibus
-                doloribus!
+          <!-- HEADER-CONTENT -->
+          <div class="ms_content-main py-4">
+            <div class="container-fluid">
+              <div class="row g-4">
+                <div class="col-12 col-lg-7">
+                  <!-- Prossime classi -->
+                  <div class="card mb-4">
+                    <div class="card-header">
+                      <h4>Prossime classi</h4>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- FAQ -->
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>F.A.Q.</h4>
+                    </div>
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sit laboriosam assumenda placeat fuga voluptatibus, quis
+                      quod, dolor eveniet minima provident voluptates dolores
+                      illo! Saepe atque sit laboriosam dicta adipisci magnam.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                  <!-- Todo -->
+                  <div class="card mb-4">
+                    <div class="card-header">
+                      <h4>Todo</h4>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <input
+                            class="form-check-input me-1"
+                            type="checkbox"
+                            value=""
+                            id="firstCheckbox"
+                          />
+                          <label class="form-check-label" for="firstCheckbox"
+                            >Kickoff nuove classi</label
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <input
+                            class="form-check-input me-1"
+                            type="checkbox"
+                            value=""
+                            id="secondCheckbox"
+                          />
+                          <label class="form-check-label" for="secondCheckbox"
+                            >Lezione su Bootstrap 5 in classe #75</label
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <input
+                            class="form-check-input me-1"
+                            type="checkbox"
+                            value=""
+                            id="thirdCheckbox"
+                          />
+                          <label class="form-check-label" for="thirdCheckbox"
+                            >Controllare username github studenti</label
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Active Users -->
+                  <div class="card">
+                    <div class="card-body p-3">
+                      <div class="card-border">
+                        <img src="assets/stats.jpeg" class="stats" alt="" />
+                        <ul class="list-group">
+                          <li class="list-group-item">
+                            <h4>Utenti attivi</h4>
+                            <p>Lista degli utenti attivi nell'ultimo mese</p>
+                          </li>
+                          <li class="list-group-item">Gennaio: 1200</li>
+                          <li class="list-group-item">Febbraio: 800</li>
+                          <li class="list-group-item">Marzo: 1500</li>
+                          <li class="list-group-item">
+                            <a href="">Visualizza report approfondito</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

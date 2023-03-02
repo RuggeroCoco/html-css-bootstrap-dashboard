@@ -1,5 +1,5 @@
 :root {
-  --ms-heaeder-height: 4rem;
+  --ms-header-height: 4rem;
   --ms-sidebar-width: 4rem;
   /* color */
   --sidebar-bg: #051e34;
@@ -27,7 +27,7 @@ body {
 /* HEADER */
 .ms_header {
   width: 100%;
-  height: var(--ms-heaeder-height);
+  height: var(--ms-header-height);
 }
 
 .m-logo {
@@ -45,17 +45,23 @@ body {
 
 .ms_sidebar {
   background-color: var(--sidebar-bg);
+  color: white;
   width: var(--ms-sidebar-width);
   height: 100%;
 }
 
 .ms_content {
-  width: calc(100% - var(--sidebar-width));
+  width: calc(100% - var(--ms-sidebar-width));
   height: 100%;
 }
 
 .ms_content-header {
   background-color: var(--ms-contend-header-bg);
+}
+
+.card-border {
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 1rem;
 }
 /* MEDIAQUIRY */
 @media screen and (min-width: 991px) {
