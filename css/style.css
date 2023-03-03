@@ -45,9 +45,18 @@ body {
 
 .ms_sidebar {
   background-color: var(--sidebar-bg);
+  background-image: url(../assets/sidebar-bg.png);
   color: white;
   width: var(--ms-sidebar-width);
   height: 100%;
+}
+
+.sidebar-btn {
+  transition: all 300ms;
+}
+
+.sidebar-btn:hover {
+  background-color: rgba(125, 125, 125, 0.5);
 }
 
 .ms_content {
@@ -59,9 +68,24 @@ body {
   background-color: var(--ms-contend-header-bg);
 }
 
+.sub-text-head {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  color: white;
+}
+
 .card-border {
   border: 1px solid rgb(170, 170, 170);
   border-radius: 1rem;
+}
+
+.ms_slash {
+  background-color: rgb(255, 52, 52);
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
 }
 /* MEDIAQUIRY */
 @media screen and (min-width: 991px) {

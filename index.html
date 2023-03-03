@@ -78,28 +78,269 @@
       <!-- MAIN -->
       <main class="ms_main d-flex">
         <!-- SIDEBAR -->
-        <div
-          class="ms_sidebar py-4 d-flex flex-column mb-3 justify-content-between"
-        >
-          <img src="assets/sidebar-bg.png" alt="" />
-          <div class="ms_sidebar-top">
-            <i class="fa-solid fa-house"></i>Home
-            <i class="fa-solid fa-chart-simple"></i>Stats
-            <i class="fa-solid fa-signal"></i>Signal
+        <nav class="ms_sidebar d-flex flex-column justify-content-between">
+          <!-- <img src="assets/sidebar-bg.png" alt="" /> -->
+          <ul class="p-0 mt-4 mx-3">
+            <li
+              class="d-flex mb-2 align-items-baseline sidebar-btn d-flex justify-content-center py-2"
+            >
+              <i class="fa-solid fa-house"></i>
+              <span class="ms_text-sidebar d-none d-lg-block ms-3">Home</span>
+            </li>
+            <li
+              class="d-flex mb-2 align-items-baseline sidebar-btn d-flex justify-content-center py-2"
+            >
+              <i class="fa-solid fa-chart-simple"></i>
+              <span class="ms_text-sidebar d-none d-lg-block ms-3">Stats</span>
+            </li>
+            <li
+              class="d-flex mb-2 align-items-baseline sidebar-btn d-flex justify-content-center py-2"
+            >
+              <i class="fa-solid fa-signal"></i>
+              <span class="ms_text-sidebar d-none d-lg-block ms-3">Signal</span>
+            </li>
+          </ul>
+          <div
+            class="ms_entity mb-4 d-flex justify-content-center align-items-baseline mx-3 sidebar-btn"
+          >
+            <i class="fa-solid fa-gear me-2"></i>
+            <span class="ms_text-sidebar d-none d-lg-block py-2">Admin</span>
           </div>
-          <div class="ms_sidebar-bottom"></div>
-        </div>
+        </nav>
         <!-- SIDEBAR -->
         <div class="ms_content overflow-y-auto">
           <!-- HEADER-CONTENT -->
           <div class="ms_content-header py-4">
             <div class="container-fluid">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quia
-              dolore sequi maxime fuga quae eligendi nostrum beatae facilis
-              tenetur quibusdam blanditiis eos, laboriosam possimus totam fugit
-              reprehenderit omnis repellat quas. Cumque, provident esse dolore
-              quo omnis odio? Mollitia, numquam beatae? Voluptate dolorem
-              beatae, delectus repellat laborum sequi necessitatibus doloribus!
+              <div class="ms_banner text-white pb-3">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-md-4 col-lg-6 mt-4">
+                      <div class="ms_badges d-flex align-items-baseline">
+                        <h3>Boolean</h3>
+                        <div class="badge rounded-pill ms-2 sub-text-head">
+                          Piano Blaze
+                        </div>
+                      </div>
+                      <div class="ms_badges">
+                        <span class="badge rounded-pill sub-text-head"
+                          >3 app</span
+                        >
+                        <span><i class="fa-solid fa-angles-right"></i></span>
+                        <span class="badge rounded-pill d-lg-none">+</span>
+                        <span
+                          class="badge rounded-pill d-none d-lg-inline sub-text-head"
+                          >Boolean mobile app</span
+                        >
+                        <span
+                          class="badge rounded-pill d-none d-lg-inline sub-text-head"
+                        >
+                          Boolean web app</span
+                        >
+                        <span
+                          class="badge rounded-pill d-none d-lg-inline sub-text-head"
+                          >Boolean blog app</span
+                        >
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 mt-4">
+                      Studenti online negli ultimi 30 minuti
+                      <h3>125</h3>
+                    </div>
+
+                    <div
+                      class="ms_new-student col-12 col-md-4 col-lg-3 order-first order-md-last d-flex align-items-center mt-4"
+                    >
+                      <div class="me-3">Nuovo Studente</div>
+                      <button
+                        class="btn"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample"
+                      >
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+
+                      <!-- canvas -->
+                      <div
+                        class="offcanvas offcanvas-end"
+                        tabindex="-1"
+                        id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel"
+                      >
+                        <div class="offcanvas-header">
+                          <h5
+                            class="offcanvas-title"
+                            id="offcanvasExampleLabel"
+                          >
+                            Inserisci un nuovo studente
+                          </h5>
+
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="ms_canvas offcanvas-body">
+                          <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label"
+                                >Nome</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="inputEmail4"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label"
+                                >Cognome</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="inputPassword4"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label
+                                class="form-label"
+                                for="autoSizingInputGroup"
+                                >Email</label
+                              >
+                              <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="autoSizingInputGroup"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="inputPassword4"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label
+                                class="form-label"
+                                for="autoSizingInputGroup"
+                                >Indirizzo Email</label
+                              >
+                              <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="autoSizingInputGroup"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="inputPassword4"
+                              />
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label"
+                                >indirizzo</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputAddress"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label"
+                                >Città</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputCity"
+                              />
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label"
+                                >Stato</label
+                              >
+                              <select id="inputState" class="form-select">
+                                <option selected>Scegli...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2">
+                              <label for="inputZip" class="form-label"
+                                >Cap</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputZip"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label
+                                class="form-label"
+                                for="autoSizingInputGroup"
+                                >Foto</label
+                              >
+                              <div class="input-group">
+                                <div class="input-group-text">Scegli file</div>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="autoSizingInputGroup"
+                                  placeholder="Nessun file selezionato"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="gridCheck"
+                                />
+                                <label class="form-check-label" for="gridCheck">
+                                  Seleziona per proseguire
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <button type="submit" class="btn btn-primary">
+                                Salva
+                              </button>
+                            </div>
+                            <div class="col-2">
+                              <button type="submit" class="btn btn-warning">
+                                Svuota
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                        <!-- /canvas -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- HEADER-CONTENT -->
@@ -112,18 +353,193 @@
                     <div class="card-header">
                       <h4>Prossime classi</h4>
                     </div>
-                    <div class="card-body">
-                      <ul class="list-group">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
-                      </ul>
-                    </div>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col" colspan="4">Nome</th>
+                          <th scope="col" class="d-none d-lg-table-cell">
+                            Data inizio
+                          </th>
+                          <th scope="col" class="d-none d-md-table-cell">
+                            ROI
+                          </th>
+                          <th scope="col">Stato</th>
+                          <th scope="col">Azioni</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span
+                              ><i class="fa-solid fa-code ms_slash"></i
+                            ></span>
+                            Classe 75
+                          </th>
+                          <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_done bg-success">Done</div>
+                          </td>
+                          <td>
+                            <button class="btn">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span
+                              ><i class="fa-solid fa-code ms_slash"></i
+                            ></span>
+                            Classe 76
+                          </th>
+                          <td class="d-none d-lg-table-cell">16 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_done bg-success">Done</div>
+                          </td>
+                          <td>
+                            <button class="btn">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span
+                              ><i class="fa-solid fa-code ms_slash"></i
+                            ></span>
+                            Classe 77
+                          </th>
+                          <td class="d-none d-lg-table-cell">17 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_process bg-warning">
+                              Process
+                            </div>
+                          </td>
+                          <td>
+                            <button class="btn">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span
+                              ><i class="fa-solid fa-code ms_slash"></i
+                            ></span>
+                            Classe 78
+                          </th>
+                          <td class="d-none d-lg-table-cell">18 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_done bg-success">Done</div>
+                          </td>
+                          <td>
+                            <button class="btn">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span
+                              ><i class="fa-solid fa-code ms_slash"></i
+                            ></span>
+                            Classe 79
+                          </th>
+                          <td class="d-none d-lg-table-cell">19 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_failed bg-danger">failed</div>
+                          </td>
+                          <td>
+                            <button class="btn">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span
+                              ><i class="fa-solid fa-code ms_slash"></i
+                            ></span>
+                            Classe 80
+                          </th>
+                          <td class="d-none d-lg-table-cell">20 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_done bg-success">Done</div>
+                          </td>
+                          <td>
+                            <button class="btn">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span
+                              ><i class="fa-solid fa-code ms_slash"></i
+                            ></span>
+                            Classe 81
+                          </th>
+                          <td class="d-none d-lg-table-cell">21 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_failed bg-danger">failed</div>
+                          </td>
+                          <td>
+                            <button class="btn">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span
+                              ><i class="fa-solid fa-code ms_slash"></i
+                            ></span>
+                            Classe 82
+                          </th>
+                          <td class="d-none d-lg-table-cell">22 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_done bg-success">Done</div>
+                          </td>
+                          <td>
+                            <button class="btn">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="btn">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                   <!-- FAQ -->
                   <div class="card">
@@ -131,10 +547,116 @@
                       <h4>F.A.Q.</h4>
                     </div>
                     <div class="card-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Sit laboriosam assumenda placeat fuga voluptatibus, quis
-                      quod, dolor eveniet minima provident voluptates dolores
-                      illo! Saepe atque sit laboriosam dicta adipisci magnam.
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <!-- <h2 class="accordion-header" id="headingOne"></h2> -->
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            Come aggiungere un nuovo studente?
+                          </button>
+                          <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <strong
+                                >This is the first item's accordion
+                                body.</strong
+                              >
+                              It is shown by default, until the collapse plugin
+                              adds the appropriate classes that we use to style
+                              each element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the <code>.accordion-body</code>,
+                              though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                            >
+                              Come posso accedere alle informazioni del mio
+                              account?
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <strong
+                                >This is the second item's accordion
+                                body.</strong
+                              >
+                              It is hidden by default, until the collapse plugin
+                              adds the appropriate classes that we use to style
+                              each element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the <code>.accordion-body</code>,
+                              though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                            >
+                              Posso usare questa dashboard da mobile?
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <strong
+                                >This is the third item's accordion
+                                body.</strong
+                              >
+                              It is hidden by default, until the collapse plugin
+                              adds the appropriate classes that we use to style
+                              each element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the <code>.accordion-body</code>,
+                              though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
